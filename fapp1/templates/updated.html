@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1> Update was successful</h1>
+Username:{{ user.name }}<br>
+Age:{{ user.age }}<br>
+Country:{{user.country}}<br>
+
+<p> click <a href="/"> here</a> to home</p>
+<p> click <a href="/profile/{{ user.name }}"> here</a> to view your profile</p>
+{% endblock %}
+

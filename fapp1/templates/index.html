@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+	<h1>Welcome</h1>
+	<br>
+	<p> click <a href="/user/logout"> here</a> to logout</p>
+	{{ user.name }}
+<p> click <a href="/profile/{{ user }}"> here</a> to view your profile</p>
+
+	
+{% endblock %}
+
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My Profile</title>
+	<link href="static\bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="container">
+	<h1>Welcome</h1>
+	<br>
+	<p> click <a href="/user/logout"> here</a> to logout</p>
+	{% for message in get_flashed_messages() %}
+		{{ message }}
+	{% endfor %}
+</body>
+</html> -->

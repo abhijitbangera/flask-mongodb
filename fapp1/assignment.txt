@@ -1,0 +1,7 @@
+Build a simple API server for the following endpoints:
+user/login
+user/logout
+user/signup
+user/profile/<user_id>
+Get profile data
+Update profile data

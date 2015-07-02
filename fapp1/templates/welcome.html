@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Flask App</h1>
+{{ message }}
+
+<p> click <a href="/user/login"> here</a> to login</p>
+<p> New User? <a href="/user/signup"> Click Here</a> to Signup</p>
+{% endblock %}
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Flask</title>
+</head>
+<body>
+<h1>template test</h1>
+{% for message in get_flashed_messages() %}
+		{{ message }}
+	{% endfor %}
+</body>
+</html> -->
